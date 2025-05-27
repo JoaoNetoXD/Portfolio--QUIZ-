@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Animação suave ao rolar para as seções
     const sections = document.querySelectorAll('.section');
     
     const observer = new IntersectionObserver((entries) => {
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Adicionar efeito de hover nos cards de projeto
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach(card => {
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Adicionar ano atual no footer
     const currentYear = new Date().getFullYear();
     const footer = document.createElement('footer');
     footer.innerHTML = `<p>&copy; ${currentYear} - Todos os direitos reservados</p>`;
